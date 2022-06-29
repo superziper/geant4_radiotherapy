@@ -9,11 +9,11 @@ gdml files link = https://drive.google.com/drive/folders/1ZF7K4e0xKozYbh1DCWeVq6
 
 how to use :
 
-./sim <gdml files> <macro files> 
+./sim "<gdml files>" "<macro files>" 
 
 if you want to record log file :
 
-./sim <gdml files> <macro files> | tee <logfile>
+./sim "<gdml files>" "<macro files>" | tee "<logfile>"
 
 what need to be improved : 
 
