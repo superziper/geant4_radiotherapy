@@ -1,0 +1,89 @@
+/run/initialize
+
+/vis/disable
+
+/run/verbose 1
+
+/score/create/realWorldLogVol logicLungRT
+
+/score/quantity/doseDeposit doseDeplogicLungRT
+
+/score/close
+
+/score/create/realWorldLogVol logicLungLT 
+
+/score/quantity/doseDeposit doseDeplogicLungLT
+
+/score/close
+
+/score/create/realWorldLogVol logicHeart 
+
+/score/quantity/doseDeposit doseDeplogicHeart
+
+/score/close  
+
+/score/create/realWorldLogVol logicPTV
+
+/score/quantity/doseDeposit doseDeplogicPTV
+
+/score/close
+
+/score/create/realWorldLogVol logicSpinalCord
+
+/score/quantity/doseDeposit doseDeplogicSpinalCord
+
+/score/close
+
+/score/create/realWorldLogVol logicTrakea
+
+/score/quantity/doseDeposit doseDeplogicTrakea
+
+/score/close
+
+/score/create/boxMesh boxMesh_1
+
+/score/mesh/boxSize 24.6 11.6 17. cm
+
+/score/mesh/translate/xyz -8.5 -11 97. cm
+
+/score/mesh/rotate/rotateX 90. degree
+
+/score/mesh/rotate/rotateZ 308. degree
+
+/score/mesh/nBin 492 232 340
+
+/score/quantity/doseDeposit doseDepBox
+
+#/score/drawProjection boxMesh_1 doseDepBox
+
+/score/close
+
+/run/printProgress 10000000
+
+/run/beamOn 2000000000
+
+/score/dumpQuantityToFile logicLungRT doseDeplogicLungRT doseDepositLungRT_LMT
+
+/score/dumpQuantityToFile logicLungLT doseDeplogicLungLT doseDepositLungLT_LMT
+
+/score/dumpQuantityToFile logicHeart doseDeplogicHeart doseDepositHeart_LMT
+
+/score/dumpQuantityToFile logicPTV doseDeplogicPTV doseDepositPTV_LMT
+
+/score/dumpQuantityToFile logicSpinalCord doseDeplogicSpinalCord doseDepositSpinalCord_LMT
+
+/score/dumpQuantityToFile logicTrakea doseDeplogicTrakea doseDepositTrakea_LMT
+
+/score/dumpQuantityToFile boxMesh_1 doseDepBox doseDepBox_LMT
+
+
+
+
+
+
+
+
+
+
+
+

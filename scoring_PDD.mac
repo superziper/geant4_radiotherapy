@@ -1,0 +1,30 @@
+/run/initialize
+
+/vis/disable
+
+/score/create/boxMesh boxMesh_1
+
+/score/mesh/boxSize 20. 20. 20. cm
+
+/score/mesh/translate/xyz 0 0 120 cm
+
+/score/mesh/nBin 400 400 400
+
+/score/quantity/doseDeposit eDep
+
+/score/drawProjection boxMesh_1 eDep
+
+/run/verbose 1
+
+/run/printProgress 4000000
+
+/run/beamOn 2000000000
+
+/score/close
+
+/score/dumpAllQuantitiesToFile boxMesh_1 doseDepositPDD7
+
+
+
+
+
